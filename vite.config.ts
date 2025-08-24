@@ -9,6 +9,17 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
+  preview: {
+    host: "::",
+    port: 4173,
+    allowedHosts: [
+      "master-site-wolfx.cfxhq9.easypanel.host",
+      "wolfx.com.br",
+      "www.wolfx.com.br",
+      "localhost",
+      "127.0.0.1"
+    ],
+  },
   plugins: [
     react(),
     mode === 'development' &&
