@@ -52,6 +52,18 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// WolfX Custom Colors
+				'tech-blue': {
+					DEFAULT: 'hsl(var(--tech-blue))',
+					dark: 'hsl(var(--tech-blue-dark))'
+				},
+				'energy-orange': {
+					DEFAULT: 'hsl(var(--energy-orange))',
+					dark: 'hsl(var(--energy-orange-dark))'
+				},
+				'wolf-dark': 'hsl(var(--wolf-dark))',
+				'wolf-gray': 'hsl(var(--wolf-gray))',
+				'surface-light': 'hsl(var(--surface-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -62,6 +74,16 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-card': 'var(--gradient-card)'
+			},
+			boxShadow: {
+				'tech': 'var(--shadow-tech)',
+				'card-custom': 'var(--shadow-card)',
+				'glow': 'var(--shadow-glow)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

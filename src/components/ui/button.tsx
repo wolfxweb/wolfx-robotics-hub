@@ -18,11 +18,17 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
+        // WolfX Custom Variants
+        "tech-primary": "bg-tech-blue text-white hover:bg-tech-blue-dark shadow-tech transition-all duration-300 hover:shadow-glow",
+        "energy-primary": "bg-energy-orange text-white hover:bg-energy-orange-dark shadow-tech transition-all duration-300 hover:shadow-glow",
+        "gradient-primary": "bg-gradient-primary text-white hover:scale-105 shadow-tech transition-all duration-300",
+        "outline-white": "border border-white/30 text-white hover:bg-white/10 backdrop-blur-sm transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-10 text-lg",
         icon: "h-10 w-10",
       },
     },
