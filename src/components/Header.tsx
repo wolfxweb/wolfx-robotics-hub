@@ -1,55 +1,53 @@
 import { Button } from "@/components/ui/button";
 import { Search, ShoppingCart, User, Menu } from "lucide-react";
+import { Link } from "react-router-dom";
+import logoWolfX from "@/assets/logo-sem-fundo-wolfx.png";
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
+    <header className="sticky top-0 z-50 bg-wolf-dark text-white border-b border-gray-800">
       <div className="container mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-center">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center text-white font-bold">
-              W
-            </div>
-            <span className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
-              WolfX
-            </span>
-          </div>
+          <Link to="/" className="flex items-center">
+            <img 
+              src={logoWolfX} 
+              alt="WolfX" 
+              className="h-8 object-contain"
+            />
+          </Link>
 
-          {/* Navigation */}
-          <nav className="hidden md:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+          {/* Navigation - Temporariamente oculto para deploy institucional */}
+          {/* <nav className="hidden md:flex items-center space-x-8">
+            <Link to="/produtos" className="text-white hover:text-energy-orange transition-colors">
               Produtos
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
-              Kits Didáticos
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/tutoriais" className="text-white hover:text-energy-orange transition-colors">
               Tutoriais
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
+            </Link>
+            <Link to="/suporte" className="text-white hover:text-energy-orange transition-colors">
               Suporte
-            </a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">
-              Comunidade
-            </a>
-          </nav>
+            </Link>
+            <Link to="/blog" className="text-white hover:text-energy-orange transition-colors">
+              Blog
+            </Link>
+          </nav> */}
 
-          {/* Actions */}
-          <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="icon" className="hidden sm:flex">
+          {/* Actions - Temporariamente oculto para deploy institucional */}
+          {/* <div className="flex items-center space-x-4">
+            <Button variant="ghost" size="icon" className="hidden sm:flex text-white hover:text-energy-orange hover:bg-white/10">
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="text-white hover:text-energy-orange hover:bg-white/10">
               <ShoppingCart className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon">
+            <Button variant="ghost" size="icon" className="text-white hover:text-energy-orange hover:bg-white/10">
               <User className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="md:hidden">
+            <Button variant="ghost" size="icon" className="md:hidden text-white hover:text-energy-orange hover:bg-white/10">
               <Menu className="h-5 w-5" />
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

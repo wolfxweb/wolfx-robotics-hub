@@ -8,6 +8,7 @@ import {
   Linkedin,
   Mail
 } from "lucide-react";
+import logoWolfX from "@/assets/logo-sem-fundo-wolfx.png";
 
 const Footer = () => {
   return (
@@ -17,11 +18,12 @@ const Footer = () => {
           
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-primary rounded-lg flex items-center justify-center text-white font-bold">
-                W
-              </div>
-              <span className="text-2xl font-bold">WolfX</span>
+            <div className="flex items-center">
+              <img 
+                src={logoWolfX} 
+                alt="WolfX" 
+                className="h-8 object-contain"
+              />
             </div>
             <p className="text-gray-400 leading-relaxed">
               Transformando ideias em realidade tecnológica. Sua parceira em inovação, 

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Mail, Phone } from "lucide-react";
+import { ArrowRight, Mail, Phone, MessageCircle } from "lucide-react";
 
 const CTA = () => {
   return (
@@ -11,30 +11,33 @@ const CTA = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Pronto para Transformar Suas{" "}
+            Pronto para{" "}
             <span className="bg-gradient-to-r from-energy-orange to-white bg-clip-text text-transparent">
-              Ideias?
+              Começar?
             </span>
           </h2>
           
           <p className="text-xl md:text-2xl mb-10 text-gray-200 leading-relaxed max-w-3xl mx-auto">
-            Junte-se à comunidade WolfX e tenha acesso às melhores ferramentas, 
-            componentes e suporte para criar projetos extraordinários.
+            Encontre tudo o que precisa para seus projetos de robótica e eletrônica. 
+            Qualidade, preço justo e entrega rápida em um só lugar.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <Button 
+            {/* Botão temporariamente oculto para deploy institucional */}
+            {/* <Button 
               variant="energy-primary"
               size="xl"
             >
-              Começar Agora
+              Comprar Agora
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </Button> */}
             
             <Button 
               variant="outline-white"
               size="xl"
+              onClick={() => window.open('https://wa.me/5548988114708', '_blank')}
             >
+              <MessageCircle className="mr-2 h-5 w-5" />
               Falar com Especialista
             </Button>
           </div>
@@ -47,7 +50,7 @@ const CTA = () => {
             </div>
             <div className="flex items-center justify-center gap-3 text-gray-300">
               <Phone className="h-5 w-5 text-energy-orange" />
-              <span>Suporte 24/7 disponível</span>
+              <span>(48) 98811-4708</span>
             </div>
           </div>
         </div>

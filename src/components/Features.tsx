@@ -11,33 +11,33 @@ import {
 const features = [
   {
     icon: Shield,
-    title: "Qualidade e Confiabilidade",
-    description: "Seleção rigorosa de produtos com controle de qualidade criterioso para garantir durabilidade e alto desempenho."
+    title: "Qualidade Garantida",
+    description: "Todos os produtos passam por rigoroso controle de qualidade para garantir durabilidade e desempenho."
   },
   {
     icon: Headphones,
-    title: "Suporte Técnico Especializado",
-    description: "Equipe de especialistas sempre disponível para auxiliar em montagens, programação e resolução de problemas."
+    title: "Suporte Técnico",
+    description: "Equipe especializada para ajudar na escolha dos produtos e resolução de dúvidas técnicas."
   },
   {
     icon: Truck,
-    title: "Envio Rápido e Eficiente",
-    description: "Sistema logístico otimizado com processamento no mesmo dia útil para não atrasar seus projetos."
+    title: "Entrega Rápida",
+    description: "Envio em até 24h para todo o Brasil com rastreamento em tempo real do seu pedido."
   },
   {
     icon: CreditCard,
-    title: "Pagamento Flexível",
-    description: "Parcelamento em até 3x sem juros para tornar a tecnologia mais acessível ao seu orçamento."
+    title: "Pagamento Seguro",
+    description: "Múltiplas formas de pagamento com parcelamento em até 12x e total segurança."
   },
   {
     icon: GraduationCap,
-    title: "Conteúdo Educacional",
-    description: "Tutoriais, artigos e guias desenvolvidos por especialistas para acelerar seu aprendizado."
+    title: "Peças de Reposição",
+    description: "Ampla variedade de componentes eletrônicos e peças para manutenção e reparos."
   },
   {
     icon: Users,
-    title: "Comunidade Ativa",
-    description: "Conecte-se com outros entusiastas, compartilhe experiências e colabore em projetos inovadores."
+    title: "Atendimento Personalizado",
+    description: "Atendimento humanizado para encontrar exatamente o que você precisa para seu projeto."
   }
 ];
 
@@ -53,8 +53,8 @@ const Features = () => {
             </span>
           </h2>
           <p className="text-xl text-wolf-gray max-w-3xl mx-auto leading-relaxed">
-            Nossos diferenciais são a base do nosso compromisso com o seu sucesso. 
-            Oferecemos uma experiência completa que impulsiona sua inovação.
+            Somos especialistas em robótica e eletrônica, oferecendo produtos de qualidade 
+            e o melhor atendimento para seus projetos.
           </p>
         </div>
 

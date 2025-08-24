@@ -9,6 +9,7 @@ import {
   ArrowRight,
   Microscope
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const categories = [
   {
@@ -85,13 +86,16 @@ const ProductCategories = () => {
                   <p className="text-wolf-gray mb-6 leading-relaxed">
                     {category.description}
                   </p>
-                  <Button 
-                    variant="ghost" 
-                    className="group-hover:text-tech-blue transition-colors"
-                  >
-                    Explorar categoria
-                    <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  {/* Botão temporariamente oculto para deploy institucional */}
+                  {/* <Link to="/produtos">
+                    <Button 
+                      variant="ghost" 
+                      className="group-hover:text-tech-blue transition-colors"
+                    >
+                      Explorar categoria
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </Button>
+                  </Link> */}
                 </CardContent>
               </Card>
             );
